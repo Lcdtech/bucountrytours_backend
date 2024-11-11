@@ -1,0 +1,17 @@
+# Dependencies
+node_modules
+logs/
+whatsapp-sessions
+# yarn error logs
+yarn-error.log
+
+# Environment varibales
+.env*
+!.env*.example
+
+# Code coverage
+coverage
+yarn.lock
+G-Accounts/
+uploads
+template
