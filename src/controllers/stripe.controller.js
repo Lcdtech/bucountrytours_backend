@@ -1,6 +1,6 @@
-
+require('dotenv').config();
 const Stripe = require("stripe");
-const stripe = Stripe("sk_test_51E2DZkBjtrgHLEWNXTM2BgmY62nG5IOQ66sKz52ndmpdTsrF9OdddY4ftQf9DNiyJ6tPFwXRSXiDKLSIwf5uhHq000quyy0a4N"); // Replace with your Secret Key
+const stripe = Stripe(process.env.STRIPE_SECRET_KEY); // Replace with your Secret Key
 
 const paymentIntent = async (req, res) => {
     try {
